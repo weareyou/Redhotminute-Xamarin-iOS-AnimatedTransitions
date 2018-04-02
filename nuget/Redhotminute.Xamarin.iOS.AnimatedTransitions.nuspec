@@ -9,7 +9,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Package with multiple animated transitions for Xamarin.iOS.</description>
         <projectUrl>https://github.com/Redhotminute/Redhotminute-Xamarin-iOS-AnimatedTransitions</projectUrl>
-        <iconUrl>https://github.com/Redhotminute/Redhotminute-Xamarin-iOS-AnimatedTransitions/raw/develop/artwork/logo.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/Redhotminute/Redhotminute-Xamarin-iOS-AnimatedTransitions/develop/artwork/icon.png</iconUrl>
         <tags>xamarin ios transitions</tags>
     </metadata>
     <files>     

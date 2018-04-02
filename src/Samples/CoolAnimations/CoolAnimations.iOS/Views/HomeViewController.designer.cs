@@ -19,6 +19,9 @@ namespace CoolAnimations.iOS.Views
 		UIKit.UIButton IconImage { get; set; }
 
 		[Outlet]
+		UIKit.UIScrollView ScrollView { get; set; }
+
+		[Outlet]
 		UIKit.UIButton SecondButtonReveal { get; set; }
 
 		[Outlet]
@@ -44,6 +47,11 @@ namespace CoolAnimations.iOS.Views
 			if (SettingsButton != null) {
 				SettingsButton.Dispose ();
 				SettingsButton = null;
+			}
+
+			if (ScrollView != null) {
+				ScrollView.Dispose ();
+				ScrollView = null;
 			}
 		}
 	}

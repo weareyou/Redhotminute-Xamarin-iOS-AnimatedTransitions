@@ -22,6 +22,7 @@
             <connections>
                 <outlet property="ButtonReveal" destination="oOu-CM-iUv" id="xX2-pW-P4T"/>
                 <outlet property="IconImage" destination="YD1-Hm-EFb" id="GSG-VZ-qKP"/>
+                <outlet property="ScrollView" destination="1xt-x5-pA3" id="n9K-3r-xTN"/>
                 <outlet property="SecondButtonReveal" destination="kHZ-hn-GUo" id="lFD-Cw-b21"/>
                 <outlet property="SettingsButton" destination="OwX-aA-zq6" id="j7v-xH-WYC"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>

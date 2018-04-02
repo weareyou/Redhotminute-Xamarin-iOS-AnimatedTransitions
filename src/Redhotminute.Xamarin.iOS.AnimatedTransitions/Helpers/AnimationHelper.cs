@@ -30,5 +30,11 @@ namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers
 
             view.Layer.SublayerTransform = transform;
         }
+
+        public static CGRect GetFrameFromViewInScrollView(UIScrollView scrollview, CGRect frame)
+        {
+            var position = scrollview.ConvertRectToView(frame, null);
+            return new CGRect(position.X, position.Y, frame.Width, frame.Height);
+        }
 	}
 }
