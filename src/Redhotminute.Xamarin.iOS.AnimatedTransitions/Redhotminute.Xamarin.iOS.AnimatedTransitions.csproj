@@ -45,7 +45,7 @@
     <Folder Include="Helpers\" />
     <Folder Include="Transitions\" />
     <Folder Include="Transitions\CenterPointRevealTransition\" />
-    <Folder Include="Transitions\CircleButtonRevealTransition\" />
+    <Folder Include="Transitions\CirculairRevealTransition\" />
     <Folder Include="Transitions\SquareButtonRevealTransition\" />
     <Folder Include="Transitions\FadeInOutTransition\" />
     <Folder Include="Transitions\LeftRightInOutTransition\" />
@@ -59,8 +59,8 @@
     <Compile Include="Interfaces\IStartAnimationViewController.cs" />
     <Compile Include="Transitions\CenterPointRevealTransition\CenterPointRevealTransition.cs" />
     <Compile Include="Transitions\CenterPointRevealTransition\CenterPointRevealTransitioningDelegate.cs" />
-    <Compile Include="Transitions\CircleButtonRevealTransition\CircleButtonRevealTransition.cs" />
-    <Compile Include="Transitions\CircleButtonRevealTransition\CircleButtonRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\CirculairRevealTransition\CirculairRevealTransition.cs" />
+    <Compile Include="Transitions\CirculairRevealTransition\CirculairRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransition.cs" />
     <Compile Include="Transitions\FadeInOutTransition\FadeInOutTransition.cs" />

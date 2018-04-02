@@ -15,7 +15,7 @@ There is some sample code available, currenyly the MvvmCross 5 sample "Cool Anim
 
 ![](artwork/ImageRevealTransition.gif)
 
-### CircleButtonRevealTransition
+### CirculairRevealTransition
 
 ![](artwork/CircleButtonRevealTransition.gif)
 
@@ -46,7 +46,7 @@ public partial class SettingsViewController : MvvmCross.iOS.Views.MvxViewControl
 	{
 		base.ViewDidLoad();
 
-		TransitioningDelegate = new CircleButtonRevealTransitioningDelegate(0.4f, UIColor.White);
+		TransitioningDelegate = new CirculairRevealTransitioningDelegate(0.4f, UIColor.White);
 ```
 
 3. Set the StartFrame (and StartImage if needed) in the starting viewcontroller

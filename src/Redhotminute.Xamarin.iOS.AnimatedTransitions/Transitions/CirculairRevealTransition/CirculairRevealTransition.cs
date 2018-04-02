@@ -5,13 +5,13 @@ using UIKit;
 
 namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
-	public class CircleButtonRevealTransition : BaseTransition
+	public class CirculairRevealTransition : BaseTransition
 	{
 		private UIView _bubble;
 
 		public UIColor BubbleColor { get; set; } = UIColor.White;
 
-		public CircleButtonRevealTransition(float duration, UIColor color, bool isPresenting = true)
+		public CirculairRevealTransition(float duration, UIColor color, bool isPresenting = true)
 		{
 			Duration = duration;
 			IsPresenting = isPresenting;
