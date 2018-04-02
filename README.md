@@ -1,11 +1,8 @@
-# Animated transitions for iOS 
+# Animated transitions for Xamarin.iOS 
 
-This nuget package can be used to quickly add animated transitions to your project. Currently I only tested it with MvvmCross projects but it should also work with Xamarin.iOS projects (although you might need to figure out how to implement it as explanation below will be for MvvmCross projects only).
+You can find a lot of animated transitions for iOS on the web, but most of them are written either in Objective-C or Swift. This library contains a small amount of cool transitions, ported to C# for Xamarin.iOS.
 
-## TODO
-
-- Better sample app
-- Rewrite documentation
+There is some sample code available, currenyly the MvvmCross 5 sample "Cool Animations" is up-to-date. I am working hard to bring more samples and more transitions into this library.
 
 
 ## Usage
@@ -106,9 +103,6 @@ TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.
 * https://github.com/ameizi/awesome-ios-animation
 * https://github.com/recruit-mp/RMPZoomTransitionAnimator/blob/master/Pod/Classes/RMPZoomTransitionAnimator.m
 * https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25
-
-## More Information
-Just ask Jacob if you want more information. He seems to be the Transitioning Master for iOS at this moment :)
 
 ## License
 None as of now. 
