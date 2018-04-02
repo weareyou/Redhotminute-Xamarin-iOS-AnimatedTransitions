@@ -6,8 +6,8 @@
     <ProjectGuid>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Redhotminute.Plugin.iOS.AnimatedTransitions</RootNamespace>
-    <AssemblyName>Redhotminute.Plugin.iOS.AnimatedTransitions</AssemblyName>
+    <RootNamespace>Redhotminute.Xamarin.iOS.AnimatedTransitions</RootNamespace>
+    <AssemblyName>Redhotminute.Xamarin.iOS.AnimatedTransitions</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

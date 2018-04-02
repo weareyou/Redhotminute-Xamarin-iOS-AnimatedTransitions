@@ -192,7 +192,11 @@
     </ProjectReference>
     <ProjectReference Include="..\..\..\Redhotminute-Plugin-iOS-AnimatedTransitions\Redhotminute.Plugin.iOS.AnimatedTransitions.csproj">
       <Project>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</Project>
-      <Name>Redhotminute.Plugin.iOS.AnimatedTransitions</Name>
+      <Name>Redhotminute.Xamarin.iOS.AnimatedTransitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Redhotminute.Xamarin.iOS.AnimatedTransitions\Redhotminute.Xamarin.iOS.AnimatedTransitions.csproj">
+      <Project>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</Project>
+      <Name>Redhotminute.Xamarin.iOS.AnimatedTransitions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

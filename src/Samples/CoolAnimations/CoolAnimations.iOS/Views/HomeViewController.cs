@@ -5,7 +5,6 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views.Gestures;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters.Attributes;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Helpers;
 using Redhotminute.Plugin.iOS.AnimatedTransitions.Interfaces;
 using UIKit;
 

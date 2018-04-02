@@ -1,12 +1,12 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redhotminute.Plugin.iOS.AnimatedTransitions", "Redhotminute-Plugin-iOS-AnimatedTransitions\Redhotminute.Plugin.iOS.AnimatedTransitions.csproj", "{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redhotminute.Xamarin.iOS.AnimatedTransitions", "Redhotminute.Xamarin.iOS.AnimatedTransitions\Redhotminute.Xamarin.iOS.AnimatedTransitions.csproj", "{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55ABD802-B006-4771-A0E3-DE1A7C39F3A8}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
-		..\nuget\Redhotminute.Plugin.iOS.AnimatedTransitions.nuspec = ..\nuget\Redhotminute.Plugin.iOS.AnimatedTransitions.nuspec
+		..\nuget\Redhotminute.Xamarin.iOS.AnimatedTransitions.nuspec = ..\nuget\Redhotminute.Xamarin.iOS.AnimatedTransitions.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{D1F69FC5-4F74-4AEF-ADD4-DAA341C3E4C3}"
