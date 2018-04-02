@@ -75,6 +75,7 @@
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransition.cs" />
+    <Compile Include="Transitions\Base\BaseStartImageTransitioningDelegate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

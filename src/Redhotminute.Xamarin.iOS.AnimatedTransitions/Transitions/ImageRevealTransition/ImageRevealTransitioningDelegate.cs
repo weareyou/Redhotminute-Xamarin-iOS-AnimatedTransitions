@@ -2,9 +2,9 @@
 using CoreGraphics;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
-    public class ImageRevealTransitioningDelegate : BaseTransitioningDelegate<ImageRevealTransition>
+    public class ImageRevealTransitioningDelegate : BaseStartImageTransitioningDelegate<ImageRevealTransition>
     {
         public ImageRevealTransitioningDelegate(float duration) : base(new ImageRevealTransition(duration, true))
         {

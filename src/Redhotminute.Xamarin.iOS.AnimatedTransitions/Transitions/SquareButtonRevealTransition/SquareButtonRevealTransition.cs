@@ -1,9 +1,9 @@
-﻿namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+﻿namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
 	using System;
 	using System.Linq;
 	using CoreGraphics;
-	using Redhotminute.Plugin.iOS.AnimatedTransitions.Helpers;
+	using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
 	using UIKit;
 
 	public class SquareButtonRevealTransition : BaseTransition

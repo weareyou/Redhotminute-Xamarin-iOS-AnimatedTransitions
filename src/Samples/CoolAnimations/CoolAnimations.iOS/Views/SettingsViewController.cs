@@ -3,7 +3,7 @@ using CoolAnimations.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views.Gestures;
 using MvvmCross.iOS.Views.Presenters.Attributes;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions;
 using UIKit;
 
 namespace CoolAnimations.iOS.Views
@@ -20,8 +20,9 @@ namespace CoolAnimations.iOS.Views
      
             var bindingSet = this.CreateBindingSet<SettingsViewController, SettingsViewModel>();
             bindingSet.Bind(CloseButton.Tap()).For(v => v.Command).To(vm => vm.CloseCommand);
-            bindingSet.Bind(DurationSlider).For(v => v.Value).To(vm => vm.DurationSetting);
-            //bindingSet.Bind(DurationLabel).For(v => v.Text).To(vm => vm.DurationText);
+            //bindingSet.Bind(DurationSlider).To(vm => vm.DurationSetting);
+            //bindingSet.Bind(this).For(v => v.SliderValue).To(vm => vm.DurationSetting);
+            bindingSet.Bind(DurationLabel).For(v => v.Text).To(vm => vm.DurationText);
             bindingSet.Apply();
         }
     }

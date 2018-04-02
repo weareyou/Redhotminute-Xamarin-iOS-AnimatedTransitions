@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using CoreGraphics;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Interfaces;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Interfaces;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
     public class LeftRightInOutTransition : BaseTransition
     {

@@ -5,7 +5,7 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views.Gestures;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters.Attributes;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions;
 using UIKit;
 
 namespace CoolAnimations.iOS.Views

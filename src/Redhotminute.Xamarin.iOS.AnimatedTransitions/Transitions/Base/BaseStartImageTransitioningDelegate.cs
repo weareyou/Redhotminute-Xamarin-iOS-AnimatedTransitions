@@ -5,9 +5,9 @@ using UIKit;
 
 namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
-    public class BaseStartingFrameTransitioningDelegate<T> : BaseTransitioningDelegate<T> where T : BaseTransition
+    public class BaseStartImageTransitioningDelegate<T> : BaseTransitioningDelegate<T> where T : BaseTransition
     {
-        public BaseStartingFrameTransitioningDelegate(T transition) : base(transition)
+        public BaseStartImageTransitioningDelegate(T transition) : base(transition)
         {
         }
 
@@ -15,10 +15,10 @@ namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
         {
             IStartAnimationViewController controller = null;
 
-            if(source is UINavigationController)
+            if (source is UINavigationController)
             {
                 controller = ((UINavigationController)source).TopViewController as IStartAnimationViewController;
-            } 
+            }
             else if (source is UIViewController)
             {
                 controller = source as IStartAnimationViewController;
@@ -28,12 +28,18 @@ namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
             {
                 var startingFrame = controller.StartFrame;
                 if (startingFrame == CGRect.Empty)
-                    throw new Exception("Starting frame is expected for this type of transition");
+                    throw new Exception($"{nameof(controller.StartFrame)} is required for this type of transition");
 
                 TransitionAnimator.StartingFrame = startingFrame;
 
+                var selectedImage = controller.StartImage;
+                if (selectedImage == null)
+                    throw new Exception($"{nameof(controller.StartImage)} is required for this type of transition");
+                    
+                TransitionAnimator.SelectedImage = selectedImage;
+
                 return TransitionAnimator;
-            } 
+            }
 
             return null;
         }

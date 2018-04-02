@@ -11,19 +11,17 @@ namespace CoolAnimations.Core.ViewModels
     {
         public BaseViewModel()
         {
-            CloseCommand = new MvxAsyncCommand(DoCloseAsync);
         }
 
         [MvxInject]
         public IMvxNavigationService NavigationService { get; set; }
 
-        public IMvxAsyncCommand CloseCommand { get; private set; }
+        public IMvxAsyncCommand CloseCommand 
+            => new MvxAsyncCommand(DoCloseAsync);
 
-        public float Duration => Settings.Duration;
+        public float Duration => 0.4f;//Settings.Duration;
 
         private async Task DoCloseAsync()
-        {
-            await NavigationService.Close(this).ConfigureAwait(false);
-        }
+            => await NavigationService.Close(this).ConfigureAwait(false);
     }
 }

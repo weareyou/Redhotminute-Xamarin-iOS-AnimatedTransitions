@@ -1,7 +1,7 @@
 ﻿using CoreGraphics;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
 	public abstract class BaseTransition : UIViewControllerAnimatedTransitioning
 	{

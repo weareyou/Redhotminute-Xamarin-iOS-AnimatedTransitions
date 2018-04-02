@@ -1,12 +1,12 @@
 ﻿using CoreGraphics;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Interfaces
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Interfaces
 {
     public interface IStartAnimationViewController
 	{
-		CGRect StartingFrame { get; set; }
+		CGRect StartFrame { get; set; }
 
-        UIImage SelectedImage { get; set; }
+        UIImage StartImage { get; set; }
 	}
 }

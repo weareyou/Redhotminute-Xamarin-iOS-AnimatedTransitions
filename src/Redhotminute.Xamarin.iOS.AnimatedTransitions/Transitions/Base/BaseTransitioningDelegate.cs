@@ -1,9 +1,9 @@
 ﻿using System;
 using CoreGraphics;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Interfaces;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Interfaces;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
     public abstract class BaseTransitioningDelegate<T> : UIViewControllerTransitioningDelegate where T : BaseTransition
     {
@@ -29,13 +29,13 @@ namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
 
             if (controller != null)
             {
-                var startingFrame = controller.StartingFrame;
+                var startingFrame = controller.StartFrame;
                 if (startingFrame == CGRect.Empty)
                     throw new Exception("Starting frame is expected for this type of transition");
                 
                 TransitionAnimator.StartingFrame = startingFrame;
 
-                var selectedImage = controller.SelectedImage;
+                var selectedImage = controller.StartImage;
                 if (selectedImage != null)
                     TransitionAnimator.SelectedImage = selectedImage;
                     

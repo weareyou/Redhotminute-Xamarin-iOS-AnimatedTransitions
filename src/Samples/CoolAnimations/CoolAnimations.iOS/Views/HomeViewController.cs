@@ -5,7 +5,7 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views.Gestures;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters.Attributes;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Interfaces;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Interfaces;
 using UIKit;
 
 namespace CoolAnimations.iOS.Views
@@ -13,9 +13,9 @@ namespace CoolAnimations.iOS.Views
     [MvxRootPresentation(WrapInNavigationController = true)]
     public partial class HomeViewController : MvxViewController<HomeViewModel>, IStartAnimationViewController
     {
-        public CGRect StartingFrame { get; set; }
+        public CGRect StartFrame { get; set; }
 
-        public UIImage SelectedImage { get; set; }
+        public UIImage StartImage { get; set; }
 
         public override void ViewDidLoad()
         {
@@ -25,26 +25,26 @@ namespace CoolAnimations.iOS.Views
 
             SettingsButton.TouchUpInside += async (sender, e) =>
             {
-                StartingFrame = SettingsButton.Frame;
+                StartFrame = SettingsButton.Frame;
                 await ViewModel.SettingsCommand.ExecuteAsync().ConfigureAwait(false);
             };
 
             ButtonReveal.TouchUpInside += async (sender, e) =>
             {
-                StartingFrame = ButtonReveal.Frame;
+                StartFrame = ButtonReveal.Frame;
                 await ViewModel.ButtonRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };
 
             SecondButtonReveal.TouchUpInside += async (sender, e) => 
             {
-                StartingFrame = SecondButtonReveal.Frame;
+                StartFrame = SecondButtonReveal.Frame;
                 await ViewModel.SecondButtonRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };
 
             IconImage.TouchUpInside  += async (sender, e) =>
             {
-                StartingFrame = IconImage.Frame;
-                SelectedImage = IconImage.ImageView.Image;
+                StartFrame = IconImage.Frame;
+                StartImage = IconImage.ImageView.Image;
 
                 await ViewModel.ImageRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };

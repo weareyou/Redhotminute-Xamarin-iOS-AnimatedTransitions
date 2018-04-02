@@ -105,6 +105,7 @@ TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.
 * https://github.com/onmyway133/fantastic-ios-animation/blob/master/Animation/transition.md
 * https://github.com/ameizi/awesome-ios-animation
 * https://github.com/recruit-mp/RMPZoomTransitionAnimator/blob/master/Pod/Classes/RMPZoomTransitionAnimator.m
+* https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25
 
 ## More Information
 Just ask Jacob if you want more information. He seems to be the Transitioning Master for iOS at this moment :)

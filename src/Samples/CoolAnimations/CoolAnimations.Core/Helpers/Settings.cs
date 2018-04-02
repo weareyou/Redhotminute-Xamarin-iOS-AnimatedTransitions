@@ -29,7 +29,7 @@ namespace CoolAnimations.Core.Helpers
 
         public static float Duration
         {
-            get => AppSettings.GetValueOrDefault("duration", 0.8f);
+            get => AppSettings.GetValueOrDefault("duration", 0.3f);
             set => AppSettings.AddOrUpdateValue("duration", value); 
         }
     }

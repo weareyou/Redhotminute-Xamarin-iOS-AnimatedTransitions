@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
     public class RevealFromPointTransitioningDelegate : BaseStartingFrameTransitioningDelegate<RevealFromPointTransition>
     {

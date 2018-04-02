@@ -2,7 +2,7 @@
 using CoreGraphics;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Helpers
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers
 {
     public static class AnimationHelper
 	{

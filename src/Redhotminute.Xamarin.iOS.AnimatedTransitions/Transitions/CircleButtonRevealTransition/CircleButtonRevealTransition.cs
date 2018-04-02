@@ -1,9 +1,9 @@
 ﻿using System;
 using CoreGraphics;
-using Redhotminute.Plugin.iOS.AnimatedTransitions.Helpers;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
 	public class CircleButtonRevealTransition : BaseTransition
 	{

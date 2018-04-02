@@ -2,9 +2,8 @@
 using CoreGraphics;
 using UIKit;
 
-namespace Redhotminute.Plugin.iOS.AnimatedTransitions.Transitions
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
-    // https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25
     public class ImageRevealTransition : BaseTransition
     {
         private const int CustomAnimatorTag = 99;
