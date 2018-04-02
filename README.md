@@ -27,58 +27,37 @@ Create start and a target MxvViewController, create bindings, viewmodels, etc, m
 
 For all transitions:
 
-- The starting ViewController should be of type IStartAnimationViewController.
-- The target ViewController should be of type IEndAnimationViewController
+1. The starting ViewController should be of type IStartAnimationViewController.
 
-### Start ViewController
-
-In the start ViewController:
-
-```
-private CGRect _startingFrame;
-public CGRect StartingFrame
+```C#
+public partial class HomeViewController : MvxViewController<HomeViewModel>, IStartAnimationViewController
 {
-	set { this._startingFrame = value; }
-	get { return this._startingFrame; }
-}
+	...
 ```
 
-```
-RevealButton.TouchUpInside += (sender, e) =>
+2. The target ViewController should look like this:
+
+```C#
+[MvxModalPresentation(ModalPresentationStyle = UIModalPresentationStyle.FullScreen,
+                          ModalTransitionStyle = UIModalTransitionStyle.CrossDissolve)]
+public partial class SettingsViewController : MvvmCross.iOS.Views.MvxViewController<SettingsViewModel>
 {
-	StartingFrame = RevealButton.Frame;
-	((StartViewModel)ViewModel).NavigateToTargetViewCommand.Execute(null);
+	public override void ViewDidLoad()
+	{
+		base.ViewDidLoad();
+
+		TransitioningDelegate = new CircleButtonRevealTransitioningDelegate(0.4f, UIColor.White);
+```
+
+3. Set the StartFrame (and StartImage if needed) in the starting viewcontroller
+
+```C#
+SettingsButton.TouchUpInside += async (sender, e) =>
+{
+	StartFrame = AnimationHelper.GetFrameFromViewInScrollView(ScrollView, SettingsButton.Frame);
+	await ViewModel.SettingsCommand.ExecuteAsync().ConfigureAwait(false);
 };
 ```
-
-This can be simplified if you have only one transition on the start ViewController. Just create a binding for the navigation as you would normally do and add this to your code:
-
-```
-public CGRect StartingFrame
-{
-	get { return uiview.Frame }
-}
-```
-
-
-
-### CenterPointRevealTransition
-
-Add the TransitioningDelegate to the target ViewController. I have done this both in ViewDidLoad and in the constructor, both seems to work. 
-
-```
-TransitioningDelegate = new CircleButtonRevealTransitioningDelegate(.5f);
-```
-
-### CircleButtonRevealTransition
-
-Set speed and background color of target view.
-
-```
-TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.FromRGB(244, 198, 249));
-```
-
-
 
 ## TODO
 - Add more transitions
@@ -98,4 +77,5 @@ TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.
 * https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25
 
 ## License
-None as of now. 
+
+Redhotminute.Plugin.iOS.AnimatedTransitions is licensed under the [MIT License](LICENSE)
