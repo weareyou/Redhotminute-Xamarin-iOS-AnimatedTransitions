@@ -15,6 +15,6 @@
     <files>     
 
         <!-- ios -->
-        <file src="bin/##buildtype##/Redhotminute.Xamarin.iOS.AnimatedTransitions.*" target="lib/Xamarin.iOS10" />
+        <file src="../src/Redhotminute.Xamarin.iOS.AnimatedTransitions/bin/iPhone/Redhotminute.Xamarin.iOS.AnimatedTransitions.*" target="lib/Xamarin.iOS10" />
     </files>
 </package>
