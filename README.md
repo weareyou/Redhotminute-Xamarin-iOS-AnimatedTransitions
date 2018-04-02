@@ -6,6 +6,20 @@ There is some sample code available, currenyly the MvvmCross 5 sample "Cool Anim
 
 
 ## Usage
+- TODO: With Xamarin.iOS
+- With [MvvmCross](#MvvmCross)
+
+## Transitions
+
+### ImageRevealTransition
+
+![](artwork/ImageRevealTransition.gif)
+
+### CircleButtonRevealTransition
+
+![](artwork/CircleButtonRevealTransition.gif)
+
+## Usage
 
 Add the nuget package "Redhotminute.Plugin.iOS.AnimatedTransitions" to your iOS project. 
 
@@ -46,30 +60,7 @@ public CGRect StartingFrame
 }
 ```
 
-### CustomPresenter
 
-Make sure you have a CustomPresenter (will be added to the example project?) and make sure the CustomPresenter has something like this:
-
-```
-public override void Show(IMvxIosView view)
-{
-	if (view is IEndAnimationViewController)
-	{
-		_currentModalView = view as MvxViewController;
-		_currentModalView.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
-		PresentModalViewController(_currentModalView, true);
-		return;
-	}
-	...
-```
-
-Also, make sure the closing part is using animations (code not complete!):
-
-```
-public override void CloseModalViewController()
-{
-	_currentModalView.DismissModalViewController(true);
-```
 
 ### CenterPointRevealTransition
 
@@ -86,6 +77,8 @@ Set speed and background color of target view.
 ```
 TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.FromRGB(244, 198, 249));
 ```
+
+## <a href="#MvvmCross"></a>MvvmCross
 
 ## TODO
 - Add more transitions
