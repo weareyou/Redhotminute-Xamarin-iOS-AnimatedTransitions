@@ -19,7 +19,7 @@ There is some sample code available, currenyly the MvvmCross 5 sample "Cool Anim
 
 ![](artwork/CircleButtonRevealTransition.gif)
 
-## Usage
+## <a name="MvvmCross"></a>Using transitions with MvvmCross
 
 Add the nuget package "Redhotminute.Plugin.iOS.AnimatedTransitions" to your iOS project. 
 
@@ -78,7 +78,7 @@ Set speed and background color of target view.
 TransitioningDelegate = new CenterPointRevealTransitioningDelegate(.5f, UIColor.FromRGB(244, 198, 249));
 ```
 
-## <a href="#MvvmCross"></a>MvvmCross
+
 
 ## TODO
 - Add more transitions
