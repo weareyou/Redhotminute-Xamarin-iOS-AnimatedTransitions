@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Redhotminute.Plugin.iOS.AnimatedTransitions</RootNamespace>
+    <AssemblyName>Redhotminute.Plugin.iOS.AnimatedTransitions</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <IOSDebuggerPort>10065</IOSDebuggerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Transitions\" />
+    <Folder Include="Transitions\CenterPointRevealTransition\" />
+    <Folder Include="Transitions\CircleButtonRevealTransition\" />
+    <Folder Include="Transitions\SquareButtonRevealTransition\" />
+    <Folder Include="Transitions\FadeInOutTransition\" />
+    <Folder Include="Transitions\LeftRightInOutTransition\" />
+    <Folder Include="Transitions\Base\" />
+    <Folder Include="Transitions\RevealFromPointTransition\" />
+    <Folder Include="Transitions\ImageRevealTransition\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\AnimationHelper.cs" />
+    <Compile Include="Interfaces\IStartAnimationViewController.cs" />
+    <Compile Include="Transitions\CenterPointRevealTransition\CenterPointRevealTransition.cs" />
+    <Compile Include="Transitions\CenterPointRevealTransition\CenterPointRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\CircleButtonRevealTransition\CircleButtonRevealTransition.cs" />
+    <Compile Include="Transitions\CircleButtonRevealTransition\CircleButtonRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransition.cs" />
+    <Compile Include="Transitions\FadeInOutTransition\FadeInOutTransition.cs" />
+    <Compile Include="Transitions\FadeInOutTransition\FadeInOutTransitioningDelegate.cs" />
+    <Compile Include="Transitions\LeftRightInOutTransition\LeftRightInOutTransition.cs" />
+    <Compile Include="Transitions\LeftRightInOutTransition\LeftRightInOutTransitioningDelegate.cs" />
+    <Compile Include="Interfaces\ILeftRightRevealViewController.cs" />
+    <Compile Include="Transitions\Base\BaseTransitioningDelegate.cs" />
+    <Compile Include="Transitions\Base\BaseTranstition.cs" />
+    <Compile Include="Transitions\Base\BaseStartingFrameTransitioningDelegate.cs" />
+    <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransition.cs" />
+    <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransitioningDelegate.cs" />
+    <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransition.cs" />
+    <Compile Include="Interfaces\IStartAnimationWithImageViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="Redhotminute.Plugin.iOS.AnimatedTransitions.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

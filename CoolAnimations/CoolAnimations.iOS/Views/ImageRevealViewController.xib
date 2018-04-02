@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moon Bold.otf">
+            <string>Moon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageRevealViewController">
+            <connections>
+                <outlet property="CloseButton" destination="03X-dj-M2y" id="3Tw-iV-nIV"/>
+                <outlet property="TargetImage" destination="xHu-ib-Thz" id="XVx-PW-vWU"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03X-dj-M2y">
+                    <rect key="frame" x="117.5" y="573" width="140" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="dfv-Yn-QSm"/>
+                        <constraint firstAttribute="height" constant="34" id="qnX-1R-AOO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="21"/>
+                    <state key="normal" title="CLOSE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" tag="99" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xHu-ib-Thz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xHu-ib-Thz" secondAttribute="height" multiplier="1:1" id="Ve4-Td-ZrJ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.87571126222610474" green="0.31833785772323608" blue="0.34922030568122864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xHu-ib-Thz" firstAttribute="width" secondItem="2" secondAttribute="width" id="3fd-9B-sgd"/>
+                <constraint firstItem="xHu-ib-Thz" firstAttribute="top" secondItem="2" secondAttribute="top" id="LaT-vO-ven"/>
+                <constraint firstAttribute="bottom" secondItem="03X-dj-M2y" secondAttribute="bottom" constant="60" id="VDV-Ji-G6j"/>
+                <constraint firstItem="xHu-ib-Thz" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="eWz-Bf-hk3"/>
+                <constraint firstAttribute="trailing" secondItem="xHu-ib-Thz" secondAttribute="trailing" id="k9Z-ZD-blc"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

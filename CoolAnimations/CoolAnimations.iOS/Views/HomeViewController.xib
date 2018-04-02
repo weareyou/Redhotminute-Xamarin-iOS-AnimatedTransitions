@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moon Bold.otf">
+            <string>Moon-Bold</string>
+        </array>
+        <array key="Moon Light.otf">
+            <string>Moon-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="ButtonReveal" destination="oOu-CM-iUv" id="xX2-pW-P4T"/>
+                <outlet property="IconImage" destination="YD1-Hm-EFb" id="GSG-VZ-qKP"/>
+                <outlet property="SecondButtonReveal" destination="kHZ-hn-GUo" id="lFD-Cw-b21"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-CM-iUv">
+                    <rect key="frame" x="97.5" y="240" width="180" height="30"/>
+                    <color key="backgroundColor" red="0.86572664976119995" green="0.34526726603507996" blue="0.36859950423240662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="eUv-fO-pfw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
+                    <state key="normal" title="Button Reveal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-hn-GUo">
+                    <rect key="frame" x="97" y="300" width="180" height="30"/>
+                    <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="57n-Xi-5KM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
+                    <state key="normal" title="Button Reveal 2">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-tu-OIL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="NSe-NH-5XL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPOLLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOS-l7-gF2">
+                    <rect key="frame" x="92.5" y="68" width="190" height="44"/>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="42"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOL ANIMATIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-1H-B3j">
+                    <rect key="frame" x="92.5" y="122" width="190" height="20"/>
+                    <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD1-Hm-EFb">
+                    <rect key="frame" x="97" y="360" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YD1-Hm-EFb" secondAttribute="height" multiplier="1:1" id="ABj-I2-gKQ"/>
+                    </constraints>
+                    <state key="normal" image="red_icon.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SOS-l7-gF2" firstAttribute="centerX" secondItem="aKd-tu-OIL" secondAttribute="centerX" id="04a-9C-Tqr"/>
+                <constraint firstItem="YD1-Hm-EFb" firstAttribute="top" secondItem="kHZ-hn-GUo" secondAttribute="bottom" constant="30" id="05S-TR-vQC"/>
+                <constraint firstItem="oOu-CM-iUv" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="92R-2K-4GD"/>
+                <constraint firstItem="YD1-Hm-EFb" firstAttribute="centerX" secondItem="kHZ-hn-GUo" secondAttribute="centerX" id="9fg-8C-bHE"/>
+                <constraint firstItem="aKd-tu-OIL" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="FNo-Sx-Zvh"/>
+                <constraint firstAttribute="trailing" secondItem="aKd-tu-OIL" secondAttribute="trailing" id="FfI-ba-ViT"/>
+                <constraint firstItem="oOu-CM-iUv" firstAttribute="top" secondItem="aKd-tu-OIL" secondAttribute="bottom" constant="60" id="HW9-b8-tNL"/>
+                <constraint firstItem="VHB-1H-B3j" firstAttribute="top" secondItem="SOS-l7-gF2" secondAttribute="bottom" constant="10" id="LiS-YE-4LN"/>
+                <constraint firstItem="SOS-l7-gF2" firstAttribute="centerY" secondItem="aKd-tu-OIL" secondAttribute="centerY" id="Ly2-Wh-ABY"/>
+                <constraint firstItem="VHB-1H-B3j" firstAttribute="leading" secondItem="SOS-l7-gF2" secondAttribute="leading" id="RZK-KI-Nz7"/>
+                <constraint firstItem="YD1-Hm-EFb" firstAttribute="trailing" secondItem="kHZ-hn-GUo" secondAttribute="trailing" id="b6e-Hs-pTh"/>
+                <constraint firstItem="aKd-tu-OIL" firstAttribute="top" secondItem="2" secondAttribute="top" id="be3-4g-ZY5"/>
+                <constraint firstItem="VHB-1H-B3j" firstAttribute="trailing" secondItem="SOS-l7-gF2" secondAttribute="trailing" id="bup-B7-Q1Z"/>
+                <constraint firstItem="YD1-Hm-EFb" firstAttribute="leading" secondItem="kHZ-hn-GUo" secondAttribute="leading" id="iwE-Rk-UrE"/>
+                <constraint firstItem="kHZ-hn-GUo" firstAttribute="top" secondItem="oOu-CM-iUv" secondAttribute="bottom" constant="30" id="kMd-UA-ktt"/>
+                <constraint firstItem="kHZ-hn-GUo" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="oLs-57-kRX"/>
+                <constraint firstItem="VHB-1H-B3j" firstAttribute="centerX" secondItem="SOS-l7-gF2" secondAttribute="centerX" id="xyq-i6-men"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="red_icon.png" width="1024" height="1024"/>
+        <image name="space.jpg" width="1366" height="768"/>
+    </resources>
+</document>

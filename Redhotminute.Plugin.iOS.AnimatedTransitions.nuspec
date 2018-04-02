@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Redhotminute.Plugin.iOS.AnimatedTransitions</id>
+        <version>##version##</version>
+        <title>Redhotminute Animated Transitions for iOS</title>
+        <authors>Jacob Duijzer</authors>
+        <owners>Redhotminute BV</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Xamarin plugin for animated transitions in iOS.</description>
+        <tags>xamarin ios transitions</tags>
+    </metadata>
+    <files>     
+
+        <!-- ios -->
+        <file src="bin/##buildtype##/Redhotminute.Plugin.iOS.AnimatedTransitions.*" target="lib/Xamarin.iOS10" />
+    </files>
+</package>

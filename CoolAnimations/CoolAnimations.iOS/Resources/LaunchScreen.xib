@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moon Bold.otf">
+            <string>Moon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u5K-ly-4wn">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="F8b-CY-18W">
+                    <rect key="frame" x="170" y="170" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="F8b-CY-18W" secondAttribute="height" multiplier="1:1" id="B0m-31-REf"/>
+                        <constraint firstAttribute="height" constant="140" id="Oc6-82-4ez"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPOLLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-qo-Dit">
+                    <rect key="frame" x="159" y="320" width="162.5" height="38"/>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F8b-CY-18W" firstAttribute="centerX" secondItem="u5K-ly-4wn" secondAttribute="centerX" id="3IT-58-db7"/>
+                <constraint firstItem="F8b-CY-18W" firstAttribute="centerY" secondItem="u5K-ly-4wn" secondAttribute="centerY" id="Lwq-Yb-zSk"/>
+                <constraint firstItem="7oD-qo-Dit" firstAttribute="top" secondItem="F8b-CY-18W" secondAttribute="bottom" constant="10" id="Tgh-Ui-5Eq"/>
+                <constraint firstAttribute="bottom" secondItem="u5K-ly-4wn" secondAttribute="bottom" id="cgN-Gf-4zZ"/>
+                <constraint firstAttribute="trailing" secondItem="u5K-ly-4wn" secondAttribute="trailing" id="k0R-BN-wBU"/>
+                <constraint firstItem="u5K-ly-4wn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lAR-4Q-IuR"/>
+                <constraint firstItem="u5K-ly-4wn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lLV-MI-SZX"/>
+                <constraint firstItem="7oD-qo-Dit" firstAttribute="centerX" secondItem="F8b-CY-18W" secondAttribute="centerX" id="sEN-h4-zrO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="space.jpg" width="1366" height="768"/>
+        <image name="white_icon.png" width="167" height="167"/>
+    </resources>
+</document>

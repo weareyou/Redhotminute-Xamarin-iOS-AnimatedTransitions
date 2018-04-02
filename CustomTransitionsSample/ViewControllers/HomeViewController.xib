@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="CenterPointButton" destination="U2u-NL-NIB" id="xnZ-Qg-qQE"/>
+                <outlet property="CircularRevealButton" destination="6H9-II-aZ9" id="DEB-mX-YpH"/>
+                <outlet property="RotatingImage" destination="h9N-v0-GNd" id="eo1-46-qXV"/>
+                <outlet property="TransitionSpeedLabel" destination="U6N-Lo-aXt" id="lMs-Pm-nLg"/>
+                <outlet property="TransitionSpeedSlider" destination="x45-sN-tLg" id="m6I-JL-drD"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H9-II-aZ9">
+                    <rect key="frame" x="160" y="273" width="55" height="55"/>
+                    <color key="backgroundColor" red="0.34901960780000002" green="0.53725490200000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6H9-II-aZ9" secondAttribute="height" multiplier="1:1" id="Qic-qk-eTL"/>
+                        <constraint firstAttribute="width" constant="55" id="Yzy-ri-X9G"/>
+                    </constraints>
+                    <state key="normal" title="+"/>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="x45-sN-tLg">
+                    <rect key="frame" x="28" y="151" width="319" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="Q7E-ad-XXa"/>
+                    </constraints>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6N-Lo-aXt">
+                    <rect key="frame" x="30" y="120" width="315" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0hn-f7-0KU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2u-NL-NIB">
+                    <rect key="frame" x="94" y="210" width="187" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.56828165909999995" blue="0.40316972029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="187" id="B4t-P6-C5R"/>
+                        <constraint firstAttribute="height" constant="33" id="fde-D7-Y7h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="CenterPointTransition">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9N-v0-GNd">
+                    <rect key="frame" x="157.5" y="348" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.55344941930000002" green="0.41013298209999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="h9N-v0-GNd" secondAttribute="height" multiplier="1:1" id="5Wh-aM-qGI"/>
+                        <constraint firstAttribute="width" constant="60" id="Is0-5b-6Ry"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U2u-NL-NIB" firstAttribute="top" secondItem="x45-sN-tLg" secondAttribute="bottom" constant="30" id="0MW-JP-dLF"/>
+                <constraint firstItem="U6N-Lo-aXt" firstAttribute="top" secondItem="2" secondAttribute="top" constant="120" id="1vg-aO-kp5"/>
+                <constraint firstItem="h9N-v0-GNd" firstAttribute="top" secondItem="6H9-II-aZ9" secondAttribute="bottom" constant="20" id="48G-5H-RDR"/>
+                <constraint firstItem="U2u-NL-NIB" firstAttribute="centerX" secondItem="x45-sN-tLg" secondAttribute="centerX" id="5TM-5b-WZf"/>
+                <constraint firstAttribute="trailing" secondItem="U6N-Lo-aXt" secondAttribute="trailing" constant="30" id="FLt-Tg-VJN"/>
+                <constraint firstItem="U6N-Lo-aXt" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="30" id="GMT-KF-whn"/>
+                <constraint firstItem="x45-sN-tLg" firstAttribute="trailing" secondItem="U6N-Lo-aXt" secondAttribute="trailing" id="IEI-05-WQu"/>
+                <constraint firstItem="h9N-v0-GNd" firstAttribute="centerX" secondItem="6H9-II-aZ9" secondAttribute="centerX" id="KMU-KL-SW4"/>
+                <constraint firstItem="x45-sN-tLg" firstAttribute="leading" secondItem="U6N-Lo-aXt" secondAttribute="leading" id="dlu-Xy-F8i"/>
+                <constraint firstItem="6H9-II-aZ9" firstAttribute="centerX" secondItem="U2u-NL-NIB" secondAttribute="centerX" id="eN5-UJ-2su"/>
+                <constraint firstItem="x45-sN-tLg" firstAttribute="top" secondItem="U6N-Lo-aXt" secondAttribute="bottom" constant="10" id="kgw-OX-6wc"/>
+                <constraint firstItem="6H9-II-aZ9" firstAttribute="top" secondItem="U2u-NL-NIB" secondAttribute="bottom" constant="30" id="uLp-PW-Oja"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
