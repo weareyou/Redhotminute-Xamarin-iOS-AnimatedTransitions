@@ -179,10 +179,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoolAnimations.Core\CoolAnimations.Core.csproj">
-      <Project>{B37490FD-C251-479F-B373-167290161E28}</Project>
+      <Project>{2356C7DA-BF42-4EEB-BB30-C682D0E4F64B}</Project>
       <Name>CoolAnimations.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Redhotminute.Plugin.iOS.AnimatedTransitions.csproj">
+    <ProjectReference Include="..\..\..\Redhotminute-Plugin-iOS-AnimatedTransitions\Redhotminute.Plugin.iOS.AnimatedTransitions.csproj">
       <Project>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</Project>
       <Name>Redhotminute.Plugin.iOS.AnimatedTransitions</Name>
     </ProjectReference>

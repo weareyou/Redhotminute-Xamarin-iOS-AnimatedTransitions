@@ -75,11 +75,6 @@
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransition.cs" />
-    <Compile Include="Interfaces\IStartAnimationWithImageViewController.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
-    <None Include="Redhotminute.Plugin.iOS.AnimatedTransitions.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
