@@ -1,3 +1,4 @@
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 
 namespace CoolAnimations.Core
@@ -10,7 +11,7 @@ namespace CoolAnimations.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-
+            
             RegisterNavigationServiceAppStart<ViewModels.HomeViewModel>();
         }
     }

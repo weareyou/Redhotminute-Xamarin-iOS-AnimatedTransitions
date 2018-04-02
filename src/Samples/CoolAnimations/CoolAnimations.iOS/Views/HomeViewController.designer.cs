@@ -20,6 +20,9 @@ namespace CoolAnimations.iOS.Views
 
 		[Outlet]
 		UIKit.UIButton SecondButtonReveal { get; set; }
+
+		[Outlet]
+		UIKit.UIButton SettingsButton { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -28,14 +31,19 @@ namespace CoolAnimations.iOS.Views
 				ButtonReveal = null;
 			}
 
+			if (IconImage != null) {
+				IconImage.Dispose ();
+				IconImage = null;
+			}
+
 			if (SecondButtonReveal != null) {
 				SecondButtonReveal.Dispose ();
 				SecondButtonReveal = null;
 			}
 
-			if (IconImage != null) {
-				IconImage.Dispose ();
-				IconImage = null;
+			if (SettingsButton != null) {
+				SettingsButton.Dispose ();
+				SettingsButton = null;
 			}
 		}
 	}

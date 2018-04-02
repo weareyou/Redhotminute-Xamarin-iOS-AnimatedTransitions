@@ -18,7 +18,7 @@ namespace CoolAnimations.iOS.Views
         {
             base.ViewDidLoad();
 
-            TransitioningDelegate = new CircleButtonRevealTransitioningDelegate(0.5f, UIColor.White);
+            TransitioningDelegate = new CircleButtonRevealTransitioningDelegate(ViewModel.Duration, UIColor.White);
 
             var bindingSet = this.CreateBindingSet<SecondButtonRevealViewController, SecondButtonRevealViewModel>();
             bindingSet.Bind(CloseButton.Tap()).For(v => v.Command).To(vm => vm.CloseCommand);

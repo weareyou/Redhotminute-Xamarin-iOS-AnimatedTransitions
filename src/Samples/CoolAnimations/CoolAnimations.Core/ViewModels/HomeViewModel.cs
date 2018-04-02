@@ -8,18 +8,18 @@ namespace CoolAnimations.Core.ViewModels
     {
         public HomeViewModel()
         {
-            ButtonRevealCommand = new MvxAsyncCommand(DoButtonRevealAsync);
-
-            SecondButtonRevealCommand = new MvxAsyncCommand(DoSecondButtonRevealAsync);
-
-            ImageRevealCommand = new MvxAsyncCommand(DoImageRevealAsync);
         }
 
-        public MvxAsyncCommand ButtonRevealCommand { get; private set; }
+        public IMvxAsyncCommand SettingsCommand => new MvxAsyncCommand(GoToSettingsAsync);
 
-        public MvxAsyncCommand SecondButtonRevealCommand { get; private set; }
+        public IMvxAsyncCommand ButtonRevealCommand => new MvxAsyncCommand(DoButtonRevealAsync);
 
-        public MvxAsyncCommand ImageRevealCommand { get; private set; }
+        public IMvxAsyncCommand SecondButtonRevealCommand => new MvxAsyncCommand(DoSecondButtonRevealAsync);
+
+        public IMvxAsyncCommand ImageRevealCommand => new MvxAsyncCommand(DoImageRevealAsync);
+
+        private async Task GoToSettingsAsync() 
+            => await NavigationService.Navigate<SettingsViewModel>().ConfigureAwait(false);
 
         private async Task DoButtonRevealAsync() 
             => await NavigationService.Navigate<ButtonRevealViewModel>().ConfigureAwait(false);

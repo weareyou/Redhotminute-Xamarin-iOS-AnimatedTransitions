@@ -24,6 +24,12 @@ namespace CoolAnimations.iOS.Views
 
             NavigationController.SetNavigationBarHidden(true, false);
 
+            SettingsButton.TouchUpInside += async (sender, e) =>
+            {
+                StartingFrame = SettingsButton.Frame;
+                await ViewModel.SettingsCommand.ExecuteAsync().ConfigureAwait(false);
+            };
+
             ButtonReveal.TouchUpInside += async (sender, e) =>
             {
                 StartingFrame = ButtonReveal.Frame;
@@ -43,7 +49,8 @@ namespace CoolAnimations.iOS.Views
 
                 await ViewModel.ImageRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };
-
         }
+
+
     }
 }

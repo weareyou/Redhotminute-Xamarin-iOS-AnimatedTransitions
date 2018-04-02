@@ -23,6 +23,7 @@
                 <outlet property="ButtonReveal" destination="oOu-CM-iUv" id="xX2-pW-P4T"/>
                 <outlet property="IconImage" destination="YD1-Hm-EFb" id="GSG-VZ-qKP"/>
                 <outlet property="SecondButtonReveal" destination="kHZ-hn-GUo" id="lFD-Cw-b21"/>
+                <outlet property="SettingsButton" destination="OwX-aA-zq6" id="j7v-xH-WYC"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
             </connections>
         </placeholder>
@@ -110,6 +111,14 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwX-aA-zq6">
+                                    <rect key="frame" x="331" y="20" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="H6H-mK-ZyL"/>
+                                        <constraint firstAttribute="width" constant="24" id="PuI-M8-otw"/>
+                                    </constraints>
+                                    <state key="normal" image="settings.png"/>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -124,6 +133,7 @@
                                 <constraint firstItem="wSZ-f0-gzM" firstAttribute="top" secondItem="6yl-E3-H62" secondAttribute="bottom" constant="59" id="OQm-Ln-xmb"/>
                                 <constraint firstAttribute="bottom" secondItem="wSZ-f0-gzM" secondAttribute="bottom" constant="434" id="PTt-Kv-uSS"/>
                                 <constraint firstItem="6yl-E3-H62" firstAttribute="top" secondItem="YD1-Hm-EFb" secondAttribute="bottom" constant="40" id="Rsy-7y-gZy"/>
+                                <constraint firstAttribute="trailing" secondItem="OwX-aA-zq6" secondAttribute="trailing" constant="20" id="TII-vH-jbD"/>
                                 <constraint firstItem="VHB-1H-B3j" firstAttribute="top" secondItem="SOS-l7-gF2" secondAttribute="bottom" constant="10" id="ZaP-bh-FLW"/>
                                 <constraint firstItem="6yl-E3-H62" firstAttribute="centerX" secondItem="YD1-Hm-EFb" secondAttribute="centerX" id="foA-oS-rkc"/>
                                 <constraint firstItem="kHZ-hn-GUo" firstAttribute="centerX" secondItem="SIp-jX-ebs" secondAttribute="centerX" id="fui-TS-ZsX"/>
@@ -135,6 +145,7 @@
                                 <constraint firstItem="YD1-Hm-EFb" firstAttribute="trailing" secondItem="kHZ-hn-GUo" secondAttribute="trailing" id="qo2-xi-H46"/>
                                 <constraint firstAttribute="trailing" secondItem="aKd-tu-OIL" secondAttribute="trailing" id="umm-sR-nub"/>
                                 <constraint firstItem="oOu-CM-iUv" firstAttribute="top" secondItem="aKd-tu-OIL" secondAttribute="bottom" constant="60" id="vnE-3m-bgD"/>
+                                <constraint firstItem="OwX-aA-zq6" firstAttribute="top" secondItem="SIp-jX-ebs" secondAttribute="top" constant="20" id="wgG-Rb-SJA"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -163,6 +174,7 @@
     </objects>
     <resources>
         <image name="red_icon.png" width="1024" height="1024"/>
+        <image name="settings.png" width="24" height="24"/>
         <image name="space.jpg" width="1366" height="768"/>
     </resources>
 </document>
