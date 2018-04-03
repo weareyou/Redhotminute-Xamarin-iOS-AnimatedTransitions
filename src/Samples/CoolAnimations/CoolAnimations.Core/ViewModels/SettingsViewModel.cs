@@ -9,22 +9,15 @@ namespace CoolAnimations.Core.ViewModels
         {
         }
 
-        //public float DurationSetting
-        //{
-        //    get => Settings.Duration;
-        //    set 
-        //    {
-        //        Settings.Duration = value;
-        //        RaisePropertyChanged(nameof(DurationText));
-        //    }
-        //}
-
-        private float _durationSetting;
         public float DurationSetting
         {
-            get => _durationSetting;
-            set => _durationSetting = value;
-            //set => InvokeOnMainThread(() => SetProperty(ref _durationSetting, value));
+            get => Settings.Duration;
+            set 
+            {
+                Settings.Duration = value;
+                RaisePropertyChanged(nameof(DurationText));
+                RaisePropertyChanged(nameof(Duration));
+            }
         }
 
         public string DurationText => $"Animation speed ({DurationSetting})";

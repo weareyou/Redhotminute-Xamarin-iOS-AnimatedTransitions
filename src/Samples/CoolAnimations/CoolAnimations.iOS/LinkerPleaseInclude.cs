@@ -5,6 +5,8 @@ using MvvmCross.iOS.Views;
 using Foundation;
 using UIKit;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Core.Navigation;
+using MvvmCross.Core.ViewModels;
 
 #pragma warning disable 219
 
@@ -43,6 +45,7 @@ namespace CoolAnimations.iOS
         public void Include(UITextView textView)
         {
             textView.Text = textView.Text + "";
+            textView.TextStorage.DidProcessEditing += (sender, e) => textView.Text = "";
             textView.Changed += (sender, args) => { textView.Text = ""; };
         }
 
@@ -101,17 +104,38 @@ namespace CoolAnimations.iOS
         {
             changed.CollectionChanged += (s, e) => { var test = $"{e.Action}{e.NewItems}{e.NewStartingIndex}{e.OldItems}{e.OldStartingIndex}"; };
         }
+
         public void Include(ICommand command)
         {
             command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
         }
+
         public void Include(MvvmCross.Platform.IoC.MvxPropertyInjector injector)
         {
             injector = new MvvmCross.Platform.IoC.MvxPropertyInjector();
         }
+
         public void Include(System.ComponentModel.INotifyPropertyChanged changed)
         {
             changed.PropertyChanged += (sender, e) => { var test = e.PropertyName; };
+        }
+
+        public void Include(MvxNavigationService service, IMvxViewModelLoader loader)
+        {
+            service = new MvxNavigationService(null, loader);
+        }
+
+        public void Include(ConsoleColor color)
+        {
+            Console.Write("");
+            Console.WriteLine("");
+            color = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
         }
     }
 }

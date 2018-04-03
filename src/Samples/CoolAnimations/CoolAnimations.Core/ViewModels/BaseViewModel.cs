@@ -19,7 +19,7 @@ namespace CoolAnimations.Core.ViewModels
         public IMvxAsyncCommand CloseCommand 
             => new MvxAsyncCommand(DoCloseAsync);
 
-        public float Duration => 0.4f;//Settings.Duration;
+        public float Duration => Settings.Duration;
 
         private async Task DoCloseAsync()
             => await NavigationService.Close(this).ConfigureAwait(false);
