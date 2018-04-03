@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moon Bold.otf">
+            <string>Moon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CirculairRevealViewController">
+            <connections>
+                <outlet property="CloseButton" destination="jvd-85-Vvp" id="LIc-35-GR6"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvd-85-Vvp">
+                    <rect key="frame" x="332" y="20" width="23" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="d4c-zm-lX9"/>
+                        <constraint firstAttribute="width" constant="23" id="wxP-RV-2I0"/>
+                    </constraints>
+                    <state key="normal" image="close.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circulair. Reveal." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRl-KO-BAR">
+                    <rect key="frame" x="98.5" y="324" width="179" height="19"/>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jvd-85-Vvp" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" id="4BI-ed-V18"/>
+                <constraint firstAttribute="trailing" secondItem="jvd-85-Vvp" secondAttribute="trailing" constant="20" id="SgM-o1-v7g"/>
+                <constraint firstItem="PRl-KO-BAR" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="TjQ-T6-rr1"/>
+                <constraint firstItem="PRl-KO-BAR" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="b0d-fP-nAF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="23" height="24"/>
+    </resources>
+</document>

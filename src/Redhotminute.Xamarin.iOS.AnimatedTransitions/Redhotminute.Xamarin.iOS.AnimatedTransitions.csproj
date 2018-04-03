@@ -47,7 +47,7 @@
     <Folder Include="Transitions\CenterPointRevealTransition\" />
     <Folder Include="Transitions\CirculairRevealTransition\" />
     <Folder Include="Transitions\SquareButtonRevealTransition\" />
-    <Folder Include="Transitions\FadeInOutTransition\" />
+    <Folder Include="Transitions\FadeInFadeOutTransition\" />
     <Folder Include="Transitions\LeftRightInOutTransition\" />
     <Folder Include="Transitions\Base\" />
     <Folder Include="Transitions\RevealFromPointTransition\" />
@@ -61,21 +61,22 @@
     <Compile Include="Transitions\CenterPointRevealTransition\CenterPointRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\CirculairRevealTransition\CirculairRevealTransition.cs" />
     <Compile Include="Transitions\CirculairRevealTransition\CirculairRevealTransitioningDelegate.cs" />
-    <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransitioningDelegate.cs" />
-    <Compile Include="Transitions\SquareButtonRevealTransition\SquareButtonRevealTransition.cs" />
-    <Compile Include="Transitions\FadeInOutTransition\FadeInOutTransition.cs" />
-    <Compile Include="Transitions\FadeInOutTransition\FadeInOutTransitioningDelegate.cs" />
+    <Compile Include="Transitions\SquareButtonRevealTransition\SquareRevealTransitioningDelegate.cs" />
+    <Compile Include="Transitions\SquareButtonRevealTransition\SquareRevealTransition.cs" />
+    <Compile Include="Transitions\FadeInFadeOutTransition\FadeInFadeOutTransition.cs" />
+    <Compile Include="Transitions\FadeInFadeOutTransition\FadeInFadeOutTransitioningDelegate.cs" />
     <Compile Include="Transitions\LeftRightInOutTransition\LeftRightInOutTransition.cs" />
     <Compile Include="Transitions\LeftRightInOutTransition\LeftRightInOutTransitioningDelegate.cs" />
     <Compile Include="Interfaces\ILeftRightRevealViewController.cs" />
     <Compile Include="Transitions\Base\BaseTransitioningDelegate.cs" />
     <Compile Include="Transitions\Base\BaseTranstition.cs" />
-    <Compile Include="Transitions\Base\BaseStartingFrameTransitioningDelegate.cs" />
+    <Compile Include="Transitions\Base\BaseStartFrameTransitioningDelegate.cs" />
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransition.cs" />
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransition.cs" />
     <Compile Include="Transitions\Base\BaseStartImageTransitioningDelegate.cs" />
+    <Compile Include="Helpers\TransitionHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

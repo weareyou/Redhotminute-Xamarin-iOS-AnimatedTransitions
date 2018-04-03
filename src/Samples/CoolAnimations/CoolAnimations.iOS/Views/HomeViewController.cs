@@ -24,16 +24,26 @@ namespace CoolAnimations.iOS.Views
 
             NavigationController.SetNavigationBarHidden(true, false);
 
+            var bindingSet = this.CreateBindingSet<HomeViewController, HomeViewModel>();
+            bindingSet.Bind(FadeInFadeOutButton.Tap()).For(v => v.Command).To(vm => vm.FadeInFadeOutCommand);
+            bindingSet.Apply();
+
             SettingsButton.TouchUpInside += async (sender, e) =>
             {
                 StartFrame = AnimationHelper.GetFrameFromViewInScrollView(ScrollView, SettingsButton.Frame);
                 await ViewModel.SettingsCommand.ExecuteAsync().ConfigureAwait(false);
             };
 
+            InfoButton.TouchUpInside += async (sender, e) =>
+            {
+                StartFrame = AnimationHelper.GetFrameFromViewInScrollView(ScrollView, InfoButton.Frame);
+                await ViewModel.InfoCommand.ExecuteAsync().ConfigureAwait(false);
+            };
+
             ButtonReveal.TouchUpInside += async (sender, e) =>
             {
                 StartFrame = AnimationHelper.GetFrameFromViewInScrollView(ScrollView, ButtonReveal.Frame);
-                await ViewModel.ButtonRevealCommand.ExecuteAsync().ConfigureAwait(false);
+                await ViewModel.CenterPointRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };
 
             SecondButtonReveal.TouchUpInside += async (sender, e) => 
@@ -48,6 +58,12 @@ namespace CoolAnimations.iOS.Views
                 StartImage = IconImage.ImageView.Image;
 
                 await ViewModel.ImageRevealCommand.ExecuteAsync().ConfigureAwait(false);
+            };
+
+            ThirdButton.TouchUpInside += async (sender, e) =>
+            {
+                //StartFrame = AnimationHelper.GetFrameFromViewInScrollView(ScrollView, SecondButtonReveal.Frame);
+                await ViewModel.LeftRightRevealCommand.ExecuteAsync().ConfigureAwait(false);
             };
         }
     }

@@ -16,7 +16,13 @@ namespace CoolAnimations.iOS.Views
 		UIKit.UIButton ButtonReveal { get; set; }
 
 		[Outlet]
+		UIKit.UIButton FadeInFadeOutButton { get; set; }
+
+		[Outlet]
 		UIKit.UIButton IconImage { get; set; }
+
+		[Outlet]
+		UIKit.UIButton InfoButton { get; set; }
 
 		[Outlet]
 		UIKit.UIScrollView ScrollView { get; set; }
@@ -26,6 +32,9 @@ namespace CoolAnimations.iOS.Views
 
 		[Outlet]
 		UIKit.UIButton SettingsButton { get; set; }
+
+		[Outlet]
+		UIKit.UIButton ThirdButton { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -34,9 +43,19 @@ namespace CoolAnimations.iOS.Views
 				ButtonReveal = null;
 			}
 
+			if (FadeInFadeOutButton != null) {
+				FadeInFadeOutButton.Dispose ();
+				FadeInFadeOutButton = null;
+			}
+
 			if (IconImage != null) {
 				IconImage.Dispose ();
 				IconImage = null;
+			}
+
+			if (ScrollView != null) {
+				ScrollView.Dispose ();
+				ScrollView = null;
 			}
 
 			if (SecondButtonReveal != null) {
@@ -49,9 +68,14 @@ namespace CoolAnimations.iOS.Views
 				SettingsButton = null;
 			}
 
-			if (ScrollView != null) {
-				ScrollView.Dispose ();
-				ScrollView = null;
+			if (ThirdButton != null) {
+				ThirdButton.Dispose ();
+				ThirdButton = null;
+			}
+
+			if (InfoButton != null) {
+				InfoButton.Dispose ();
+				InfoButton = null;
 			}
 		}
 	}

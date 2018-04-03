@@ -112,15 +112,7 @@
     <Compile Include="Views\HomeViewController.designer.cs">
       <DependentUpon>HomeViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ButtonRevealViewController.cs" />
-    <Compile Include="Views\ButtonRevealViewController.designer.cs">
-      <DependentUpon>ButtonRevealViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomPresenter.cs" />
-    <Compile Include="Views\SecondButtonRevealViewController.cs" />
-    <Compile Include="Views\SecondButtonRevealViewController.designer.cs">
-      <DependentUpon>SecondButtonRevealViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\ImageRevealViewController.cs" />
     <Compile Include="Views\ImageRevealViewController.designer.cs">
       <DependentUpon>ImageRevealViewController.cs</DependentUpon>
@@ -129,15 +121,38 @@
     <Compile Include="Views\SettingsViewController.designer.cs">
       <DependentUpon>SettingsViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LeftRight\LeftRightViewController.cs" />
+    <Compile Include="Views\LeftRight\LeftRightViewController.designer.cs">
+      <DependentUpon>LeftRightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FadeInFadeOut\FadeInFadeOutViewController.cs" />
+    <Compile Include="Views\FadeInFadeOut\FadeInFadeOutViewController.designer.cs">
+      <DependentUpon>FadeInFadeOutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Info\InfoViewController.cs" />
+    <Compile Include="Views\Info\InfoViewController.designer.cs">
+      <DependentUpon>InfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CirculairReveal\CirculairRevealViewController.cs" />
+    <Compile Include="Views\CirculairReveal\CirculairRevealViewController.designer.cs">
+      <DependentUpon>CirculairRevealViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CenterPointReveal\CenterPointRevealViewController.cs" />
+    <Compile Include="Views\CenterPointReveal\CenterPointRevealViewController.designer.cs">
+      <DependentUpon>CenterPointRevealViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Setup.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Views\HomeViewController.xib" />
-    <InterfaceDefinition Include="Views\ButtonRevealViewController.xib" />
-    <InterfaceDefinition Include="Views\SecondButtonRevealViewController.xib" />
     <InterfaceDefinition Include="Views\ImageRevealViewController.xib" />
     <InterfaceDefinition Include="Views\SettingsViewController.xib" />
+    <InterfaceDefinition Include="Views\LeftRight\LeftRightViewController.xib" />
+    <InterfaceDefinition Include="Views\FadeInFadeOut\FadeInFadeOutViewController.xib" />
+    <InterfaceDefinition Include="Views\Info\InfoViewController.xib" />
+    <InterfaceDefinition Include="Views\CirculairReveal\CirculairRevealViewController.xib" />
+    <InterfaceDefinition Include="Views\CenterPointReveal\CenterPointRevealViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -217,6 +232,16 @@
     <BundleResource Include="Resources\close.png" />
     <BundleResource Include="Resources\close%402x.png" />
     <BundleResource Include="Resources\close%403x.png" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\info%402x.png" />
+    <BundleResource Include="Resources\info%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\LeftRight\" />
+    <Folder Include="Views\FadeInFadeOut\" />
+    <Folder Include="Views\Info\" />
+    <Folder Include="Views\CirculairReveal\" />
+    <Folder Include="Views\CenterPointReveal\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moon Bold.otf">
+            <string>Moon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController">
+            <connections>
+                <outlet property="CloseButton" destination="GHl-vY-ZCq" id="hRc-GE-8Bw"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHl-vY-ZCq">
+                    <rect key="frame" x="332" y="20" width="23" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="UYO-pf-nuE"/>
+                        <constraint firstAttribute="width" constant="23" id="w1D-xu-YR6"/>
+                    </constraints>
+                    <state key="normal" image="close.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-G3-wP1">
+                    <rect key="frame" x="157" y="80" width="62" height="27.5"/>
+                    <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-X0-1j9">
+                    <rect key="frame" x="30" y="137.5" width="315" height="161.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Rwb-hd-ar5"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">This app is created to demonstrate the different types of transitions possible with this package. The name, Appollo, is the name of the team responsible for building apps AT REDHOTMINUTE.</string>
+                            <attributes>
+                                <font key="NSFont" size="17" name="Moon-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-53-Fp8">
+                    <rect key="frame" x="30" y="329" width="315" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="5Z6-gi-TgS"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="For more information please contact Redhotminute.">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Moon-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eFP-53-Fp8" firstAttribute="top" secondItem="Sth-X0-1j9" secondAttribute="bottom" constant="30" id="HMn-yy-kZr"/>
+                <constraint firstItem="GHl-vY-ZCq" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" id="LO6-OW-pUU"/>
+                <constraint firstItem="Sth-X0-1j9" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="30" id="Qd9-QD-6VS"/>
+                <constraint firstItem="QNx-G3-wP1" firstAttribute="top" secondItem="2" secondAttribute="top" constant="80" id="YNE-CU-wBO"/>
+                <constraint firstItem="eFP-53-Fp8" firstAttribute="trailing" secondItem="Sth-X0-1j9" secondAttribute="trailing" id="dPb-w9-v3Z"/>
+                <constraint firstItem="Sth-X0-1j9" firstAttribute="top" secondItem="QNx-G3-wP1" secondAttribute="bottom" constant="30" id="fEi-xw-LqN"/>
+                <constraint firstItem="QNx-G3-wP1" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="lEt-bs-FI7"/>
+                <constraint firstAttribute="trailing" secondItem="Sth-X0-1j9" secondAttribute="trailing" constant="30" id="ljW-W1-qT7"/>
+                <constraint firstItem="eFP-53-Fp8" firstAttribute="leading" secondItem="Sth-X0-1j9" secondAttribute="leading" id="pT6-rj-b27"/>
+                <constraint firstAttribute="trailing" secondItem="GHl-vY-ZCq" secondAttribute="trailing" constant="20" id="uaq-aO-AKR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="23" height="24"/>
+    </resources>
+</document>

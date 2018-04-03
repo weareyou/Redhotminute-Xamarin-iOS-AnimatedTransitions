@@ -1,9 +1,9 @@
 ﻿using System;
 namespace CoolAnimations.Core.ViewModels
 {
-    public class ButtonRevealViewModel : BaseViewModel
+    public class LeftRightViewModel : BaseViewModel
     {
-        public ButtonRevealViewModel()
+        public LeftRightViewModel()
         {
         }
     }

@@ -9,8 +9,8 @@ using System.CodeDom.Compiler;
 
 namespace CoolAnimations.iOS.Views
 {
-	[Register ("ButtonRevealViewController")]
-	partial class ButtonRevealViewController
+	[Register ("InfoViewController")]
+	partial class InfoViewController
 	{
 		[Outlet]
 		UIKit.UIButton CloseButton { get; set; }

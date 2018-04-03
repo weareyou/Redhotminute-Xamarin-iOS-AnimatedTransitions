@@ -230,10 +230,6 @@
       <Project>{BEC2A632-66BD-477E-AADD-A0954BBB3DE8}</Project>
       <Name>AnimatedTransitions.Samples.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Redhotminute.Plugin.iOS.AnimatedTransitions.csproj">
-      <Project>{75DE6405-A5C3-43CB-90A2-59044ABA1BD4}</Project>
-      <Name>Redhotminute.Plugin.iOS.AnimatedTransitions</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -242,7 +238,6 @@
     <BundleResource Include="Resources\close.png" />
     <BundleResource Include="Resources\close%402x.png" />
     <BundleResource Include="Resources\close%403x.png" />
-    <BundleResource Include="Resources\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

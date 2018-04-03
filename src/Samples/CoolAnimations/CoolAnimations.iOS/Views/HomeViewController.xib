@@ -21,10 +21,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="ButtonReveal" destination="oOu-CM-iUv" id="xX2-pW-P4T"/>
+                <outlet property="FadeInFadeOutButton" destination="wSZ-f0-gzM" id="1yB-EX-bye"/>
                 <outlet property="IconImage" destination="YD1-Hm-EFb" id="GSG-VZ-qKP"/>
+                <outlet property="InfoButton" destination="eTB-EV-Gm8" id="u30-lX-bUz"/>
                 <outlet property="ScrollView" destination="1xt-x5-pA3" id="n9K-3r-xTN"/>
                 <outlet property="SecondButtonReveal" destination="kHZ-hn-GUo" id="lFD-Cw-b21"/>
                 <outlet property="SettingsButton" destination="OwX-aA-zq6" id="j7v-xH-WYC"/>
+                <outlet property="ThirdButton" destination="6yl-E3-H62" id="NAO-D9-xRa"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
             </connections>
         </placeholder>
@@ -40,25 +43,22 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1133"/>
                             <subviews>
                                 <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-CM-iUv">
-                                    <rect key="frame" x="97.5" y="240" width="180" height="30"/>
+                                    <rect key="frame" x="77" y="240" width="220" height="30"/>
                                     <color key="backgroundColor" red="0.86572664976119995" green="0.34526726603507996" blue="0.36859950423240662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="6fM-SV-VKb"/>
-                                        <constraint firstAttribute="width" constant="180" id="eUv-fO-pfw"/>
+                                        <constraint firstAttribute="width" constant="220" id="eUv-fO-pfw"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
-                                    <state key="normal" title="Button Reveal">
+                                    <state key="normal" title="Center point Reveal">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-hn-GUo">
-                                    <rect key="frame" x="97" y="300" width="180" height="30"/>
+                                    <rect key="frame" x="77" y="300" width="220" height="30"/>
                                     <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="180" id="57n-Xi-5KM"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
-                                    <state key="normal" title="Button Reveal 2">
+                                    <state key="normal" title="Circulair reveal">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>
@@ -89,11 +89,10 @@
                                     <state key="normal" image="red_icon.png"/>
                                 </button>
                                 <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yl-E3-H62">
-                                    <rect key="frame" x="97" y="580" width="180" height="30"/>
+                                    <rect key="frame" x="77" y="570" width="220" height="30"/>
                                     <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="SL1-Ed-Qhb"/>
-                                        <constraint firstAttribute="width" constant="180" id="iAE-Du-bTO"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
                                     <state key="normal" title="Button Reveal 3">
@@ -101,14 +100,13 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-f0-gzM">
-                                    <rect key="frame" x="97" y="669" width="180" height="30"/>
+                                    <rect key="frame" x="77" y="630" width="220" height="30"/>
                                     <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="gx0-dw-ACB"/>
-                                        <constraint firstAttribute="width" constant="180" id="hFx-d3-8Hi"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
-                                    <state key="normal" title="Button Reveal 4">
+                                    <state key="normal" title="Fade In. Fade Out.">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>
@@ -120,6 +118,14 @@
                                     </constraints>
                                     <state key="normal" image="settings.png"/>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-EV-Gm8">
+                                    <rect key="frame" x="287" y="19" width="24" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="El8-5s-ALp"/>
+                                        <constraint firstAttribute="width" constant="24" id="KeZ-Kn-Jwd"/>
+                                    </constraints>
+                                    <state key="normal" image="info.png"/>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -130,21 +136,27 @@
                                 <constraint firstItem="YD1-Hm-EFb" firstAttribute="centerX" secondItem="kHZ-hn-GUo" secondAttribute="centerX" id="5xY-cW-SLF"/>
                                 <constraint firstItem="VHB-1H-B3j" firstAttribute="trailing" secondItem="SOS-l7-gF2" secondAttribute="trailing" id="5y8-pY-8JF"/>
                                 <constraint firstItem="kHZ-hn-GUo" firstAttribute="top" secondItem="oOu-CM-iUv" secondAttribute="bottom" constant="30" id="8li-kt-0Fa"/>
+                                <constraint firstItem="OwX-aA-zq6" firstAttribute="leading" secondItem="eTB-EV-Gm8" secondAttribute="trailing" constant="20" id="9WZ-uR-A4f"/>
+                                <constraint firstItem="6yl-E3-H62" firstAttribute="leading" secondItem="oOu-CM-iUv" secondAttribute="leading" id="A0Q-dE-95I"/>
+                                <constraint firstItem="6yl-E3-H62" firstAttribute="trailing" secondItem="oOu-CM-iUv" secondAttribute="trailing" id="GKd-gd-8xR"/>
+                                <constraint firstItem="eTB-EV-Gm8" firstAttribute="centerY" secondItem="OwX-aA-zq6" secondAttribute="centerY" id="Gib-Cr-yJd"/>
                                 <constraint firstItem="aKd-tu-OIL" firstAttribute="top" secondItem="SIp-jX-ebs" secondAttribute="top" id="IfZ-44-brC"/>
-                                <constraint firstItem="wSZ-f0-gzM" firstAttribute="top" secondItem="6yl-E3-H62" secondAttribute="bottom" constant="59" id="OQm-Ln-xmb"/>
-                                <constraint firstAttribute="bottom" secondItem="wSZ-f0-gzM" secondAttribute="bottom" constant="434" id="PTt-Kv-uSS"/>
-                                <constraint firstItem="6yl-E3-H62" firstAttribute="top" secondItem="YD1-Hm-EFb" secondAttribute="bottom" constant="40" id="Rsy-7y-gZy"/>
+                                <constraint firstItem="wSZ-f0-gzM" firstAttribute="leading" secondItem="oOu-CM-iUv" secondAttribute="leading" id="MV5-TU-6Dm"/>
+                                <constraint firstItem="wSZ-f0-gzM" firstAttribute="top" secondItem="6yl-E3-H62" secondAttribute="bottom" constant="30" id="OQm-Ln-xmb"/>
+                                <constraint firstItem="6yl-E3-H62" firstAttribute="top" secondItem="YD1-Hm-EFb" secondAttribute="bottom" constant="30" id="Rsy-7y-gZy"/>
                                 <constraint firstAttribute="trailing" secondItem="OwX-aA-zq6" secondAttribute="trailing" constant="20" id="TII-vH-jbD"/>
                                 <constraint firstItem="VHB-1H-B3j" firstAttribute="top" secondItem="SOS-l7-gF2" secondAttribute="bottom" constant="10" id="ZaP-bh-FLW"/>
+                                <constraint firstAttribute="bottom" secondItem="wSZ-f0-gzM" secondAttribute="bottom" constant="473" id="bAM-iu-FeG"/>
                                 <constraint firstItem="6yl-E3-H62" firstAttribute="centerX" secondItem="YD1-Hm-EFb" secondAttribute="centerX" id="foA-oS-rkc"/>
                                 <constraint firstItem="kHZ-hn-GUo" firstAttribute="centerX" secondItem="SIp-jX-ebs" secondAttribute="centerX" id="fui-TS-ZsX"/>
                                 <constraint firstItem="wSZ-f0-gzM" firstAttribute="centerX" secondItem="6yl-E3-H62" secondAttribute="centerX" id="g5x-NR-ZjW"/>
-                                <constraint firstItem="YD1-Hm-EFb" firstAttribute="leading" secondItem="kHZ-hn-GUo" secondAttribute="leading" id="j8a-AK-54n"/>
                                 <constraint firstItem="SOS-l7-gF2" firstAttribute="centerX" secondItem="aKd-tu-OIL" secondAttribute="centerX" id="jaN-3y-FbU"/>
                                 <constraint firstItem="oOu-CM-iUv" firstAttribute="centerX" secondItem="SIp-jX-ebs" secondAttribute="centerX" id="mZl-7Y-5XA"/>
                                 <constraint firstItem="YD1-Hm-EFb" firstAttribute="top" secondItem="kHZ-hn-GUo" secondAttribute="bottom" constant="30" id="nF8-Qr-8sB"/>
-                                <constraint firstItem="YD1-Hm-EFb" firstAttribute="trailing" secondItem="kHZ-hn-GUo" secondAttribute="trailing" id="qo2-xi-H46"/>
+                                <constraint firstItem="kHZ-hn-GUo" firstAttribute="trailing" secondItem="oOu-CM-iUv" secondAttribute="trailing" id="nf5-UJ-Wdc"/>
+                                <constraint firstItem="wSZ-f0-gzM" firstAttribute="trailing" secondItem="oOu-CM-iUv" secondAttribute="trailing" id="sy8-d0-myx"/>
                                 <constraint firstAttribute="trailing" secondItem="aKd-tu-OIL" secondAttribute="trailing" id="umm-sR-nub"/>
+                                <constraint firstItem="kHZ-hn-GUo" firstAttribute="leading" secondItem="oOu-CM-iUv" secondAttribute="leading" id="vEc-eT-zLI"/>
                                 <constraint firstItem="oOu-CM-iUv" firstAttribute="top" secondItem="aKd-tu-OIL" secondAttribute="bottom" constant="60" id="vnE-3m-bgD"/>
                                 <constraint firstItem="OwX-aA-zq6" firstAttribute="top" secondItem="SIp-jX-ebs" secondAttribute="top" constant="20" id="wgG-Rb-SJA"/>
                             </constraints>
@@ -174,6 +186,7 @@
         </view>
     </objects>
     <resources>
+        <image name="info.png" width="24" height="25"/>
         <image name="red_icon.png" width="1024" height="1024"/>
         <image name="settings.png" width="24" height="24"/>
         <image name="space.jpg" width="1366" height="768"/>

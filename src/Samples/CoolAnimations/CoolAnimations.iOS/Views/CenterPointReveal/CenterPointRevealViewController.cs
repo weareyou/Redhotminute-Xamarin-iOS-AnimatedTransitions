@@ -1,6 +1,5 @@
 ﻿using System;
 using CoolAnimations.Core.ViewModels;
-using CoreGraphics;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views.Gestures;
 using MvvmCross.iOS.Views;
@@ -12,15 +11,15 @@ namespace CoolAnimations.iOS.Views
 {
     [MvxModalPresentation(ModalPresentationStyle = UIModalPresentationStyle.FullScreen,
                           ModalTransitionStyle = UIModalTransitionStyle.CrossDissolve)]
-    public partial class SecondButtonRevealViewController : MvxViewController<SecondButtonRevealViewModel>
+    public partial class CenterPointRevealViewController : MvxViewController<CenterPointRevealViewModel>
     {
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            TransitioningDelegate = new CirculairRevealTransitioningDelegate(ViewModel.Duration, UIColor.White);
+            TransitioningDelegate = new CenterPointRevealTransitioningDelegate(ViewModel.Duration);
 
-            var bindingSet = this.CreateBindingSet<SecondButtonRevealViewController, SecondButtonRevealViewModel>();
+            var bindingSet = this.CreateBindingSet<CenterPointRevealViewController, CenterPointRevealViewModel>();
             bindingSet.Bind(CloseButton.Tap()).For(v => v.Command).To(vm => vm.CloseCommand);
             bindingSet.Apply();
         }

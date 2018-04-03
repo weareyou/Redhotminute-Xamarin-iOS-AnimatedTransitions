@@ -1,10 +1,10 @@
-﻿namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
-{
-	using CoreGraphics;
-	using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
-	using UIKit;
+﻿using CoreGraphics;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
+using UIKit;
 
-	public class CenterPointRevealTransition : BaseTransition
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
+{
+    public class CenterPointRevealTransition : BaseTransition
 	{
 		public CenterPointRevealTransition(float duration, bool isPresenting = true)
 		{

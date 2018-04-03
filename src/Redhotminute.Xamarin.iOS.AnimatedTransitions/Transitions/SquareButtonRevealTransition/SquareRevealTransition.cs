@@ -1,18 +1,18 @@
-﻿namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
-{
-	using System;
-	using System.Linq;
-	using CoreGraphics;
-	using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
-	using UIKit;
+﻿using System;
+using System.Linq;
+using CoreGraphics;
+using Redhotminute.Xamarin.iOS.AnimatedTransitions.Helpers;
+using UIKit;
 
-	public class SquareButtonRevealTransition : BaseTransition
+namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
+{
+	public class SquareRevealTransition : BaseTransition
 	{
 		private UIView _square;
 
 		public UIColor BubbleColor { get; set; } = UIColor.White;
 
-		public SquareButtonRevealTransition(float duration, UIColor color, bool isPresenting = true)
+		public SquareRevealTransition(float duration, UIColor color, bool isPresenting = true)
 		{
 			Duration = duration;
 			IsPresenting = isPresenting;
@@ -38,10 +38,10 @@
 
 				var originalSize = presentedControllerView.Frame.Size;
 
-				_square.Frame = StartingFrame; //CreateFrameForBubble(originalSize, AnimationHelper.GetCenterPointFromFrame(StartingFrame));
+				_square.Frame = StartingFrame;
 				_square.Center = AnimationHelper.GetCenterPointFromFrame(StartingFrame);
 				_square.Transform = CGAffineTransform.MakeScale(0.001f, 0.001f);
-				_square.BackgroundColor = UIColor.LightGray;
+                _square.BackgroundColor = BubbleColor;
 
 				containerView.AddSubview(_square);
 

@@ -23,9 +23,10 @@ namespace CoolAnimations.Core.ViewModels
         public float DurationSetting
         {
             get => _durationSetting;
-            set => InvokeOnMainThread(() => SetProperty(ref _durationSetting, value));
+            set => _durationSetting = value;
+            //set => InvokeOnMainThread(() => SetProperty(ref _durationSetting, value));
         }
 
-        public string DurationText => $"Duration animation ({DurationSetting})";
+        public string DurationText => $"Animation speed ({DurationSetting})";
     }
 }

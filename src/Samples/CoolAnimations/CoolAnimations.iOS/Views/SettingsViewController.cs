@@ -17,10 +17,10 @@ namespace CoolAnimations.iOS.Views
             base.ViewDidLoad();
 
             TransitioningDelegate = new CirculairRevealTransitioningDelegate(ViewModel.Duration, UIColor.White);
-     
+            //TransitioningDelegate = new FadeInOutTransitioningDelegate(1f);
             var bindingSet = this.CreateBindingSet<SettingsViewController, SettingsViewModel>();
             bindingSet.Bind(CloseButton.Tap()).For(v => v.Command).To(vm => vm.CloseCommand);
-            bindingSet.Bind(DurationSlider).To(vm => vm.DurationSetting);
+            //bindingSet.Bind(DurationSlider).To(vm => vm.DurationSetting);
             //bindingSet.Bind(this).For(v => v.SliderValue).To(vm => vm.DurationSetting);
             bindingSet.Bind(DurationLabel).For(v => v.Text).To(vm => vm.DurationText);
             bindingSet.Apply();

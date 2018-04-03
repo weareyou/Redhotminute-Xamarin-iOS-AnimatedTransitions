@@ -1,8 +1,4 @@
-﻿using System;
-using CoreGraphics;
-using UIKit;
-
-namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
+﻿namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
     public class ImageRevealTransitioningDelegate : BaseStartImageTransitioningDelegate<ImageRevealTransition>
     {

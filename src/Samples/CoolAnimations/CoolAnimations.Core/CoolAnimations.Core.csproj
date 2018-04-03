@@ -17,5 +17,10 @@
     
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="ViewModels\LeftRight\" />
+    <Folder Include="ViewModels\FadeInFadeOut\" />
+    <Folder Include="ViewModels\Info\" />
+    <Folder Include="ViewModels\CirculairReveal\" />
+    <Folder Include="ViewModels\CenterReveal\" />
   </ItemGroup>
 </Project>

@@ -19,7 +19,6 @@ namespace CoolAnimations.iOS.Views
 
             TargetImage.Tag = 99;
 
-            //TransitioningDelegate = new RevealFromPointTransitioningDelegate(.3f);
             TransitioningDelegate = new ImageRevealTransitioningDelegate(ViewModel.Duration);
 
             var bindingSet = this.CreateBindingSet<ImageRevealViewController, ImageRevealViewModel>();
