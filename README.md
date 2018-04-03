@@ -11,13 +11,7 @@ There is some sample code available, currenyly the MvvmCross 5 sample "Cool Anim
 
 ## Transitions
 
-### ImageRevealTransition
-
-![](artwork/ImageRevealTransition.gif)
-
-### CirculairRevealTransition
-
-![](artwork/CircleButtonRevealTransition.gif)
+![](artwork/AllTransitions.gif)
 
 ## <a name="MvvmCross"></a>Using transitions with MvvmCross
 
@@ -60,6 +54,7 @@ SettingsButton.TouchUpInside += async (sender, e) =>
 ```
 
 ## TODO
+- Add Wiki
 - Add more transitions
 - Dive into interactive transitions
 - Add multiple parameters (open vs close duration), open vs close alpha
