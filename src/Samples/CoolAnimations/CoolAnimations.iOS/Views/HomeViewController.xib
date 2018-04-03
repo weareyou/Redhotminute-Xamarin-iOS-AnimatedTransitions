@@ -95,7 +95,7 @@
                                         <constraint firstAttribute="height" constant="30" id="SL1-Ed-Qhb"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="17"/>
-                                    <state key="normal" title="Button Reveal 3">
+                                    <state key="normal" title="left right in out">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                 </button>

@@ -5,7 +5,7 @@ using UIKit;
 
 namespace Redhotminute.Xamarin.iOS.AnimatedTransitions.Transitions
 {
-    public class SquareRevealTransitioningDelegate : BaseStartFrameTransitioningDelegate<SquareRevealTransition>
+    public class SquareRevealTransitioningDelegate : StartFrameTransitioningDelegate<SquareRevealTransition>
 	{
         public SquareRevealTransitioningDelegate(float duration, UIColor targetBackgroundColor) : base(new SquareRevealTransition(duration, targetBackgroundColor, true))
 		{

@@ -52,6 +52,7 @@
     <Folder Include="Transitions\Base\" />
     <Folder Include="Transitions\RevealFromPointTransition\" />
     <Folder Include="Transitions\ImageRevealTransition\" />
+    <Folder Include="Transitions\TransitioningDelegates\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,13 +71,14 @@
     <Compile Include="Interfaces\ILeftRightRevealViewController.cs" />
     <Compile Include="Transitions\Base\BaseTransitioningDelegate.cs" />
     <Compile Include="Transitions\Base\BaseTranstition.cs" />
-    <Compile Include="Transitions\Base\BaseStartFrameTransitioningDelegate.cs" />
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransition.cs" />
     <Compile Include="Transitions\RevealFromPointTransition\RevealFromPointTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransitioningDelegate.cs" />
     <Compile Include="Transitions\ImageRevealTransition\ImageRevealTransition.cs" />
-    <Compile Include="Transitions\Base\BaseStartImageTransitioningDelegate.cs" />
     <Compile Include="Helpers\TransitionHelper.cs" />
+    <Compile Include="Transitions\TransitioningDelegates\StartFrameTransitioningDelegate.cs" />
+    <Compile Include="Transitions\TransitioningDelegates\StartImageTransitioningDelegate.cs" />
+    <Compile Include="Transitions\TransitioningDelegates\LeftRightInOutTransitioningDelegate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

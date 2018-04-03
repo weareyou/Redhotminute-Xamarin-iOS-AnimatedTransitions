@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -36,31 +37,108 @@
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-le-e1c">
                     <rect key="frame" x="40" y="104" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.71764705880000002" green="0.070588235289999995" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-rp-NkS">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gdL-rp-NkS" secondAttribute="height" multiplier="1:1" id="wJL-OE-d3Z"/>
+                                <constraint firstAttribute="width" constant="60" id="xDm-t7-sXY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="gdL-rp-NkS" firstAttribute="centerY" secondItem="vxL-le-e1c" secondAttribute="centerY" id="pBH-cE-ieJ"/>
+                        <constraint firstItem="gdL-rp-NkS" firstAttribute="centerX" secondItem="vxL-le-e1c" secondAttribute="centerX" id="xsY-hf-jPw"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wH-YO-rfT">
                     <rect key="frame" x="40" y="424" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.66666668650000005" green="0.51165942750000004" blue="0.23697446050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Zz-sI-fgq">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="fsk-wL-Mvt"/>
+                                <constraint firstAttribute="width" secondItem="8Zz-sI-fgq" secondAttribute="height" multiplier="1:1" id="ryr-nE-xlP"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="8Zz-sI-fgq" firstAttribute="centerY" secondItem="4wH-YO-rfT" secondAttribute="centerY" id="GNz-AK-7GD"/>
+                        <constraint firstItem="8Zz-sI-fgq" firstAttribute="centerX" secondItem="4wH-YO-rfT" secondAttribute="centerX" id="g2W-jY-IBd"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96x-hB-XKj">
                     <rect key="frame" x="215" y="104" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.71764705880000002" green="0.070588235289999995" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-zM-fmu">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="xuc-zM-fmu" secondAttribute="height" multiplier="1:1" id="0kj-tO-qOK"/>
+                                <constraint firstAttribute="width" constant="60" id="nZT-PK-R1f"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
+                        <constraint firstItem="xuc-zM-fmu" firstAttribute="centerX" secondItem="96x-hB-XKj" secondAttribute="centerX" id="A1O-ay-qon"/>
                         <constraint firstAttribute="height" constant="120" id="ExX-et-Gnk"/>
+                        <constraint firstItem="xuc-zM-fmu" firstAttribute="centerY" secondItem="96x-hB-XKj" secondAttribute="centerY" id="KnT-jc-heJ"/>
                         <constraint firstAttribute="width" constant="120" id="rjy-Yh-Ana"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-LH-SHh">
                     <rect key="frame" x="215" y="264" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-mX-kmS">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="CTp-rn-z1l"/>
+                                <constraint firstAttribute="width" secondItem="V9P-mX-kmS" secondAttribute="height" multiplier="1:1" id="XoE-yR-x21"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="V9P-mX-kmS" firstAttribute="centerY" secondItem="e8E-LH-SHh" secondAttribute="centerY" id="DfM-Dh-jb3"/>
+                        <constraint firstItem="V9P-mX-kmS" firstAttribute="centerX" secondItem="e8E-LH-SHh" secondAttribute="centerX" id="HXK-iV-shJ"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWu-Yu-AVd">
                     <rect key="frame" x="215" y="424" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.66666668650000005" green="0.51165942750000004" blue="0.23697446050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfC-5O-XpD">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="cfC-5O-XpD" secondAttribute="height" multiplier="1:1" id="SWT-a3-Z8I"/>
+                                <constraint firstAttribute="width" constant="60" id="bYj-YH-v20"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86572664980000003" green="0.34526726600000002" blue="0.36859950419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="cfC-5O-XpD" firstAttribute="centerY" secondItem="TWu-Yu-AVd" secondAttribute="centerY" id="5ZG-sa-SK2"/>
+                        <constraint firstItem="cfC-5O-XpD" firstAttribute="centerX" secondItem="TWu-Yu-AVd" secondAttribute="centerX" id="Buf-z1-gMz"/>
+                        <constraint firstItem="cfC-5O-XpD" firstAttribute="centerX" secondItem="TWu-Yu-AVd" secondAttribute="centerX" id="Ua7-pF-xZ9"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-7M-fOv">
                     <rect key="frame" x="40" y="264" width="120" height="120"/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="u8t-sK-bey">
+                            <rect key="frame" x="30" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="3c2-yU-5XZ"/>
+                                <constraint firstAttribute="width" secondItem="u8t-sK-bey" secondAttribute="height" multiplier="1:1" id="PCm-w9-pWm"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="u8t-sK-bey" firstAttribute="centerX" secondItem="kxc-7M-fOv" secondAttribute="centerX" id="418-JC-Q1s"/>
+                        <constraint firstItem="u8t-sK-bey" firstAttribute="centerY" secondItem="kxc-7M-fOv" secondAttribute="centerY" id="jf0-PV-C7c"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,5 +173,7 @@
     </objects>
     <resources>
         <image name="close.png" width="23" height="24"/>
+        <image name="info.png" width="24" height="25"/>
+        <image name="settings.png" width="24" height="24"/>
     </resources>
 </document>
